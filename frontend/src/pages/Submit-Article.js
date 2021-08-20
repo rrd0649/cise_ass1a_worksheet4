@@ -1,13 +1,15 @@
 import React from "react";
- 
-const SEPractice = () => {
-    return (
+import SubmissionForm from "../components/SubmissionForm.js";
+
+const SubmitArticle = () =>  {
+     return (
       <div>
-        <h2>Select SE Practice to get evidence for the claimed benefits</h2>
-        <p>There will be a way to select an SE practice from our SEPER repository here</p>
-        <p>Also the display table of evidence levels for different claims will show here for the SE practice selected</p>
-      </div>
+        <h2>Submit Article</h2>
+            <p>This will be a form to allow submitters to submit an article for possible inclusion in our SEPER repo.</p>
+            <SubmissionForm/>
+
+        </div>
     );
 }
  
-export default SEPractice;
+export default SubmitArticle;

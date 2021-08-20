@@ -1,14 +1,22 @@
-import React from "react";
- 
-const SubmitArticle = () =>  {
-     return (
+import articles from "../dummydata/articles.js";
+import Styles from "../components/tablestyle.js";
+import Table from "../components/evidencetable.js";
+import tablecolumns from "../components/tablecolumns.js";
+import Dropdown from "../components/Dropdown.js";
+
+const SEPractice = () => {
+    return (
       <div>
-        <h2>Submit Article</h2>
-            <p>This will be a form to allow submitters to submit an article for possible inclusion in our SEPER repo.</p>
-            <p>Also the display table of evidence levels for different claims will show here for the SE practice selected</p>
-            <p>Also the display table of evidence levels for different claims will show here for the SE practice selected</p>
-        </div>
+        <h2>Select SE Practice to get evidence for the claimed benefits</h2>
+          <Dropdown/>
+               <Styles>
+                 <Table
+                  data={articles}
+                  columns={tablecolumns}
+                 />
+              </Styles>
+      </div>
     );
 }
  
-export default SubmitArticle;
+export default SEPractice;  
